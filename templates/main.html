@@ -3,41 +3,67 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emo - dectective</title>
-    <link rel="stylesheet" href="/static/css/style.css">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="/static/css/style.css">
+    <title>Celestial Face</title>
 </head>
 
 <body>
-    <div class="page-container">
-        <nav style="color: aliceblue;">
-            <div class="nav-container">
-                <ul>
-                    <li class="brand"><img src="/static/images/images.jpeg" alt=""><b>Emo-Dek</b></li>
-                    <li class="active"><a href="/" color:white;></a><b>Home</b></a></li>
-                    <li><a href="/about" color:white;><b>About</b></a></li>
-                    <li><b>{{namevar}}</b></li>
-                    <li><b>{{idvar}}</b></li>
-                    <img src="/static/images/download (1).jpeg" alt="Your Image" class="nav-image">
-                </ul>
-            </div>
-            <div class="container">
-                <form action="/add" method="post" enctype="multipart/form-data">
-                    <label for="input1">Name:</label>
-                    <input type="text" id="input1" name="input1" required><br><br>
-
-                    <label for="input2">Registration No:</label>
-                    <input type="text" id="input2" name="input2" required><br><br>
-
-                    <button type="submit">Submit</button>
-                </form>
+    <div class="Header">
+        <div class="logo">
+            <img src="/static/images/logo.png">
+        </div>
+        <div class="aboutb">
+            <ul>
+                <li><a href="/"><strong> Home </strong></a></li>
+                <li><a href="/about"><strong>About Us</strong></a></li>
+                <li><b>{{namevar}}&nbsp;&nbsp;</b></li>
+                <li><b>{{idvar}}</b></li>
+            </ul>
+        </div>
+        <div class="icons">
+            <ul>
+                <img src="/static/images/vitb.png">
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="form-box">
+            <form action="/add"
+                method="post"
+                enctype="multipart/form-data">
+                <div class="login-container">
+                    <div class="input-box">
+                        <input type="text"
+                            class="input-field"
+                            id="input1"
+                            name="input1"
+                            placeholder='Username'
+                            required>
+                        <input type="text"
+                            class="input-field"
+                            id="input2"
+                            name="input2"
+                            placeholder='Registration No.'
+                            required>
+                    </div>
+                    <button class="submit"
+                        type="submit"><strong>Submit</strong></button>
+                </div>
+            </form>
+            <div>
                 <a href="/emo">
-                    <button type="submit">Dectect Emotion</button>
+                    <button class="recogb" type="submit"><strong>Detect Emotion</strong> </button>
                 </a>
             </div>
 
+        </div>
+    </div>
 
-        </nav>
 </body>
 
 </html>
