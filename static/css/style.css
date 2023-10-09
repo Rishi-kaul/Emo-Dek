@@ -1,0 +1,170 @@
+body {
+    background-color: rgb(2, 10, 15);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'Varela Round', sans-serif;
+    /* background-image:url(../images/images.jpeg); */
+}
+
+.nav-container{
+    background-image:url(../images/images.jpeg);
+
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+
+}
+
+nav ul li {
+    padding: 12px;
+}
+
+.brand img {
+
+    padding: 10px;
+    width: 44px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+
+.active {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 4px;
+}
+
+/* Style for the container */
+.container {
+    background-image: url(../images/images.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 40px;
+    width: 400px;
+    /* Adjust the width as needed */
+    margin: 0 auto;
+    /* Center the container horizontally */
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Style for labels */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 800;
+    color: beige;
+
+
+}
+
+/* Style for input fields */
+input[type="text"] {
+
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-weight: 1000;
+    font-size: 20px;
+
+
+}
+
+/* Style for buttons */
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 10px;
+    display: block;
+    /* Display buttons as block-level elements */
+    margin-top: 20px;
+    /* Add some top margin to separate the buttons */
+    margin: 10px auto;
+}
+
+
+button[type="submit"] {
+    background-color: #007BFF;
+}
+
+button[type="reset"] {
+    background-color: #ccc;
+}
+
+.nav-image {
+    position: absolute;
+    width: 50px;
+    /* Set the desired width */
+    height: auto;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    /* Adjust the margin as needed */
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: row;
+    /* Arrange in a row (horizontal layout) */
+}
+
+a {
+    color: white;
+    /* Change to the desired color, e.g., blue */
+    text-decoration: none;
+    /* Remove the default underline */
+}
+
+/* Style for visited links */
+a:visited {
+    color: white;
+    /* Change to the desired color for visited links */
+}
+
+/* Style for hovered links (when the mouse hovers over them) */
+a:hover {
+    color: red;
+    /* Change to the desired color for hovered links */
+}
+
+/* Style for active links (when clicked) */
+a:active {
+    color: green;
+    /* Change to the desired color for active links */
+}
+
+

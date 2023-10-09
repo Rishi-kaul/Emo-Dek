@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emo - dectective</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+    <div class="page-container">
+        <nav style="color: aliceblue;">
+            <div class="nav-container">
+                <ul>
+                    <li class="brand"><img src="/static/images/images.jpeg" alt=""><b>Emo-Dek</b></li>
+                    <li class="active"><a href="/" color:white;></a><b>Home</b></a></li>
+                    <li><a href="/about" color:white;><b>About</b></a></li>
+                    <li><b>{{namevar}}</b></li>
+                    <li><b>{{idvar}}</b></li>
+                    <img src="/static/images/download (1).jpeg" alt="Your Image" class="nav-image">
+                </ul>
+            </div>
+            <div class="container">
+                <form action="/add" method="post" enctype="multipart/form-data">
+                    <label for="input1">Name:</label>
+                    <input type="text" id="input1" name="input1" required><br><br>
+
+                    <label for="input2">Registration No:</label>
+                    <input type="text" id="input2" name="input2" required><br><br>
+
+                    <button type="submit">Submit</button>
+                </form>
+                <a href="/emo">
+                    <button type="submit">Dectect Emotion</button>
+                </a>
+            </div>
+
+
+        </nav>
+</body>
+
+</html>
